@@ -56,7 +56,7 @@ more projects. The course finishes with one final project.
   * Hello: print a simple greeting using Python ([website](https://cs50.harvard.edu/x/2022/psets/6/hello/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * Mario: print a double half-pyramid using Python ([website](https://cs50.harvard.edu/x/2022/psets/6/mario/more/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * Credit: determine whether a credit card number is valid according to Luhn's algorithm using Python ([website](https://cs50.harvard.edu/x/2022/psets/6/credit/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-  * Readability: compute the approximate grade level needed to comprehend sample text using Python [website](https://cs50.harvard.edu/x/2022/psets/6/readability/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
+  * Readability: compute the approximate grade level needed to comprehend sample text using Python ([website](https://cs50.harvard.edu/x/2022/psets/6/readability/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * DNA: identify a person based on their DNA ([website](https://cs50.harvard.edu/x/2022/psets/6/dna/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
 - Week 7: SQL
   * Songs: write SQL queries to answer questions about a database of songs ([website](https://cs50.harvard.edu/x/2022/labs/7/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset7))
@@ -69,4 +69,6 @@ more projects. The course finishes with one final project.
   * Birthdays: create a web application to keep track of friends' birthdays ([website](https://cs50.harvard.edu/x/2022/labs/9/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset9))
   * Finance: implement a website which users can "buy" and "sell" stocks ([website](https://cs50.harvard.edu/x/2022/psets/9/finance/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset9))
 - Week 10: Final Project
-  * Final Project: an online game that uses regular expressions to decrypt cyphertext ([website](https://cs50.harvard.edu/x/2022/project/), [repo](https://github.com/kvnduff/CS50X/tree/master/final_project))
+  * Final Project: an online game that uses regular expressions to decrypt 
+    cyphertext ([website](https://cs50.harvard.edu/x/2022/project/), [repo](https://github.com/kvnduff/CS50X/tree/master/final_project))
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" target="_blank" style="padding-left:100px;"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" alt="Recryptex" width="240" height="180" target="_blank"/></a>
