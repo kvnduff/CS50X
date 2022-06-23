@@ -65,6 +65,6 @@ more projects. The course finishes with one final project.
   * Trivia: write a webpage that lets users answer trivia questions ([instructions](https://cs50.harvard.edu/x/2022/labs/8/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset8))
   * Homepage: build a simple homepage using HTML, CSS, and JavaScript ([instructions](https://cs50.harvard.edu/x/2022/psets/8/homepage/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset8))
 - Week 9: Flask
-  * Finance: implement a instructions which users can "buy" and "sell" stocks ([instructions](https://cs50.harvard.edu/x/2022/psets/9/finance/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset9))
+  * Finance: implement a website via which users can "buy" and "sell" stocks ([instructions](https://cs50.harvard.edu/x/2022/psets/9/finance/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset9))
 - Week 10: Final Project
   * Final Project: an online game that uses regular expressions to decrypt cyphertext ([instructions](https://cs50.harvard.edu/x/2022/project/), [repo](https://github.com/kvnduff/CS50X/tree/master/final_project)) <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" target="_blank"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" alt="Recryptex" width="240" height="180" target="_blank"/></a>
