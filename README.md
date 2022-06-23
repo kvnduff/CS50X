@@ -71,4 +71,4 @@ more projects. The course finishes with one final project.
 - Week 10: Final Project
   * Final Project: an online game that uses regular expressions to decrypt 
     cyphertext ([website](https://cs50.harvard.edu/x/2022/project/), [repo](https://github.com/kvnduff/CS50X/tree/master/final_project))
-    <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" target="_blank" style="padding-left:100px;padding-top:20px;"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" alt="Recryptex" width="240" height="180" target="_blank"/></a>
+    <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" target="_blank"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" alt="Recryptex" width="240" height="180" target="_blank"/></a>
