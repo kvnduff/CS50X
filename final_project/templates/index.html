@@ -1,0 +1,382 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Index
+{% endblock %}
+
+{% block main %}
+
+  <!-- Match section-->
+  <div class="content">
+    <h3 class="title">MATCH.slave</h3>
+
+    <!-- Create row for multi-column layout -->
+    <div class="row">
+
+      <!-- Match list -->
+      <div class="column_1">
+        <h5 class="subtitle">MATCH</h5>
+        {% for i in range(8) %}
+          <p class="list1" id="match{{ loop.index - 1 }}"> {{ match[i] }} </p>
+        {% endfor %}
+        <br>
+      </div>
+
+      <!-- Nomatch list -->
+      <div class="column_2">
+        <h5 class="subtitle">^MATCH</h5>
+        {% for i in range(8) %}
+          <p class="list1" id="nomatch{{ loop.index - 1 }}"> {{ nomatch[i] }} </p>
+        {% endfor %}
+        <br>
+      </div>
+
+      <!-- Clunky says... -->
+      <div class="column_3">
+       <h5 class="subtitle" style="margin-left:100px;">CLUNKY SAYS...</h5>
+        <img src="/static/clunky_start.png" alt="clunky the robot" id="clunky_index">
+      </div>
+    </div>
+
+    <!-- Slave regex input -->
+    <input type="search" autocomplete="off" placeholder="type slave regex" class="text" id="regex">
+
+    <!-- !!! Testing, can be removed in final version -->
+    <!-- <p id="test_regex"></p> -->
+    <!-- <p id="test_match"></p> -->
+
+    <script>
+
+      // Process regex input
+      let input = document.querySelector("#regex");
+      input.addEventListener('input', async function() {
+        let response = await fetch('/regex?x=' + input.value);
+        let regex = await response.json();
+        // !!! Testing, can be removed in final version
+        // document.querySelector("#test_regex").innerHTML = regex;
+
+        // Update match list
+        let element1;
+        let prefix1 = "match";
+        for (let i = 0; element1 = document.getElementById(prefix1 + i); i++) {
+          if (regex[0] == "" ) {
+            element1.style.color = "#DDDDDD";
+          } else if (regex[0] != "" && regex[3][i] == true ) {
+            element1.style.color = "#9AEC4B";
+          } else {
+            element1.style.color = "#FF005F";
+          }
+        }
+
+        // Update nomatch list
+        let element2;
+        let prefix2 = "nomatch";
+        for (let i = 0; element2 = document.getElementById(prefix2 + i); i++) {
+          if (regex[0] == "" ) {
+            element2.style.color = "#DDDDDD";
+          } else if (regex[0] != "" && regex[4][i] == false ) {
+            element2.style.color = "#9AEC4B";
+          } else {
+            element2.style.color = "#FF005F";
+          }
+        }
+
+        // Change Clunky message and activate buttons if all list elements green
+        let count = 0;
+        for (let i = 0; i < 8; i++) {
+          if (regex[3][i] == true) {
+            count++;
+          }
+          if (regex[4][i] == false) {
+            count++;
+          }
+          if (count == 16) {
+
+            // Broadcast Clunky slave regex message
+            document.getElementById("clunky_index").src = "/static/clunky_slave.png"
+
+            // Activate buttons
+            button_list = document.getElementsByClassName("button_small");
+            for (let i = 0; i < button_list.length; i++) {
+              button_list[i].disabled = false;
+            }
+          }
+
+        // !!! Testing, can be removed in final version
+        // document.querySelector("#test_match").innerHTML = count;
+        }
+      });
+
+    </script>
+
+  </div>
+
+  <!-- Reveal section-->
+  <div class="content" class="height">
+    <h3 class="title">REVEAL.master</h3>
+
+    <!-- Create row for multi-column layout -->
+    <div class="row">
+
+      <!-- Master regex buttons -->
+      <div class="column">
+        <h5 class="subtitle">MASTER REGEX</h5>
+        <div id="master_regex">
+
+          <!-- Generate buttons by iterating over master_length -->
+          {% for i in range(5) %}
+            {% set outer_loop = loop %}
+            <p class="numbers1"> {{ i + 1 }} </p>
+            {% for j in range(master_length[i]) %}
+              <button type="button" class="button_big" id="master{{ outer_loop.index - 1 }}{{ loop.index - 1 }}">?</button>
+            {% endfor %}
+            <br>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Character buttons (small) -->
+      <div class="column">
+        <h5 class="subtitle" style="padding-bottom: 10px;">AVAILABLE & <span style="color: #FF005F;">USED</span> CHARACTERS</h5>
+        <p><span style="color: #5FD7FF;">letters</span>&nbsp
+        <button class="button_small" id="a" onClick="button_click(this.id)" disabled>a</button>
+        <button class="button_small" id="b" onClick="button_click(this.id)" disabled>b</button>
+        <button class="button_small" id="c" onClick="button_click(this.id)" disabled>c</button>
+        <button class="button_small" id="d" onClick="button_click(this.id)" disabled>d</button>
+        <button class="button_small" id="e" onClick="button_click(this.id)" disabled>e</button>
+        <button class="button_small" id="f" onClick="button_click(this.id)" disabled>f</button>
+        <button class="button_small" id="g" onClick="button_click(this.id)" disabled>g</button>
+        <button class="button_small" id="h" onClick="button_click(this.id)" disabled>h</button>
+        <button class="button_small" id="i" onClick="button_click(this.id)" disabled>i</button>
+        <button class="button_small" id="j" onClick="button_click(this.id)" disabled>j</button>
+        <button class="button_small" id="k" onClick="button_click(this.id)" disabled>k</button>
+        <button class="button_small" id="l" onClick="button_click(this.id)" disabled>l</button>
+        <button class="button_small" id="m" onClick="button_click(this.id)" disabled>m</button><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="button_small" id="n" onClick="button_click(this.id)" disabled>n</button>
+        <button class="button_small" id="o" onClick="button_click(this.id)" disabled>o</button>
+        <button class="button_small" id="p" onClick="button_click(this.id)" disabled>p</button>
+        <button class="button_small" id="q" onClick="button_click(this.id)" disabled>q</button>
+        <button class="button_small" id="r" onClick="button_click(this.id)" disabled>r</button>
+        <button class="button_small" id="s" onClick="button_click(this.id)" disabled>s</button>
+        <button class="button_small" id="t" onClick="button_click(this.id)" disabled>t</button>
+        <button class="button_small" id="u" onClick="button_click(this.id)" disabled>u</button>
+        <button class="button_small" id="v" onClick="button_click(this.id)" disabled>v</button>
+        <button class="button_small" id="w" onClick="button_click(this.id)" disabled>w</button>
+        <button class="button_small" id="x" onClick="button_click(this.id)" disabled>x</button>
+        <button class="button_small" id="y" onClick="button_click(this.id)" disabled>y</button>
+        <button class="button_small" id="z" onClick="button_click(this.id)" disabled>z</button><br>
+        <span style="color: #5FD7FF;">LETTERS</span>&nbsp
+        <button class="button_small" id="A" onClick="button_click(this.id)" disabled >A</button>
+        <button class="button_small" id="B" onClick="button_click(this.id)" disabled >B</button>
+        <button class="button_small" id="C" onClick="button_click(this.id)" disabled >C</button>
+        <button class="button_small" id="D" onClick="button_click(this.id)" disabled >D</button>
+        <button class="button_small" id="E" onClick="button_click(this.id)" disabled >E</button>
+        <button class="button_small" id="F" onClick="button_click(this.id)" disabled >F</button>
+        <button class="button_small" id="G" onClick="button_click(this.id)" disabled >G</button>
+        <button class="button_small" id="H" onClick="button_click(this.id)" disabled >H</button>
+        <button class="button_small" id="I" onClick="button_click(this.id)" disabled >I</button>
+        <button class="button_small" id="J" onClick="button_click(this.id)" disabled >J</button>
+        <button class="button_small" id="K" onClick="button_click(this.id)" disabled >K</button>
+        <button class="button_small" id="L" onClick="button_click(this.id)" disabled >L</button>
+        <button class="button_small" id="M" onClick="button_click(this.id)" disabled >M</button><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="button_small" id="N" onClick="button_click(this.id)" disabled >N</button>
+        <button class="button_small" id="O" onClick="button_click(this.id)" disabled >O</button>
+        <button class="button_small" id="P" onClick="button_click(this.id)" disabled >P</button>
+        <button class="button_small" id="Q" onClick="button_click(this.id)" disabled >Q</button>
+        <button class="button_small" id="R" onClick="button_click(this.id)" disabled >R</button>
+        <button class="button_small" id="S" onClick="button_click(this.id)" disabled >S</button>
+        <button class="button_small" id="T" onClick="button_click(this.id)" disabled >T</button>
+        <button class="button_small" id="U" onClick="button_click(this.id)" disabled >U</button>
+        <button class="button_small" id="V" onClick="button_click(this.id)" disabled >V</button>
+        <button class="button_small" id="W" onClick="button_click(this.id)" disabled >W</button>
+        <button class="button_small" id="X" onClick="button_click(this.id)" disabled >X</button>
+        <button class="button_small" id="Y" onClick="button_click(this.id)" disabled >Y</button>
+        <button class="button_small" id="Z" onClick="button_click(this.id)" disabled >Z</button><br>
+        <span style="color: #5FD7FF;">numbers</span>&nbsp
+        <button class="button_small" id="1" onClick="button_click(this.id)" disabled >1</button>
+        <button class="button_small" id="2" onClick="button_click(this.id)" disabled >2</button>
+        <button class="button_small" id="3" onClick="button_click(this.id)" disabled >3</button>
+        <button class="button_small" id="4" onClick="button_click(this.id)" disabled >4</button>
+        <button class="button_small" id="5" onClick="button_click(this.id)" disabled >5</button>
+        <button class="button_small" id="6" onClick="button_click(this.id)" disabled >6</button>
+        <button class="button_small" id="7" onClick="button_click(this.id)" disabled >7</button>
+        <button class="button_small" id="8" onClick="button_click(this.id)" disabled >8</button>
+        <button class="button_small" id="9" onClick="button_click(this.id)" disabled >9</button>
+        <button class="button_small" id="0" onClick="button_click(this.id)" disabled >0</button>
+        <button class="button_small" id="+" onClick="button_click(this.id)" disabled >+</button>
+        <button class="button_small" id="-" onClick="button_click(this.id)" disabled >-</button>
+        <button class="button_small" id="%" onClick="button_click(this.id)" disabled >%</button>
+        <button class="button_small" id="=" onClick="button_click(this.id)" disabled >=</button><br>
+        <span style="color: #5FD7FF;">symbols</span>&nbsp
+        <button class="button_small" id="~" onClick="button_click(this.id)" disabled >~</button>
+        <button class="button_small" id="`" onClick="button_click(this.id)" disabled >`</button>
+        <button class="button_small" id="!" onClick="button_click(this.id)" disabled >!</button>
+        <button class="button_small" id="@" onClick="button_click(this.id)" disabled >@</button>
+        <button class="button_small" id="#" onClick="button_click(this.id)" disabled >#</button>
+        <button class="button_small" id="$" onClick="button_click(this.id)" disabled >$</button>
+        <button class="button_small" id="^" onClick="button_click(this.id)" disabled >^</button>
+        <button class="button_small" id="&" onClick="button_click(this.id)" disabled >&</button>
+        <button class="button_small" id="*" onClick="button_click(this.id)" disabled >*</button>
+        <button class="button_small" id="?" onClick="button_click(this.id)" disabled >?</button>
+        <button class="button_small" id="|" onClick="button_click(this.id)" disabled >|</button>
+        <button class="button_small" id="_" onClick="button_click(this.id)" disabled >_</button>
+        <button class="button_small" id="&quot" onClick="button_click(this.id)" disabled >"</button>
+        <button class="button_small" id="'" onClick="button_click(this.id)" disabled >'</button><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="button_small" id="," onClick="button_click(this.id)" disabled >,</button>
+        <button class="button_small" id="." onClick="button_click(this.id)" disabled >.</button>
+        <button class="button_small" id=";" onClick="button_click(this.id)" disabled >;</button>
+        <button class="button_small" id=":" onClick="button_click(this.id)" disabled >:</button>
+        <button class="button_small" id="<" onClick="button_click(this.id)" disabled ><</button>
+        <button class="button_small" id=">" onClick="button_click(this.id)" disabled >></button>
+        <button class="button_small" id="/" onClick="button_click(this.id)" disabled >/</button>
+        <button class="button_small" id="\" onClick="button_click(this.id)" disabled >\</button>
+        <button class="button_small" id="(" onClick="button_click(this.id)" disabled >(</button>
+        <button class="button_small" id=")" onClick="button_click(this.id)" disabled >)</button>
+        <button class="button_small" id="{" onClick="button_click(this.id)" disabled >{</button>
+        <button class="button_small" id="}" onClick="button_click(this.id)" disabled >}</button>
+        <button class="button_small" id="[" onClick="button_click(this.id)" disabled   >[</button>
+        <button class="button_small" id="]" onClick="button_click(this.id)" disabled   >]</button><br>
+        <span style="color: #5FD7FF;">space</span>&nbsp&nbsp&nbsp
+        <button class="button_small" id=" " onClick="button_click(this.id)" disabled >space</button>
+      </div>
+
+      <!-- !!! Testing, can be removed in final version -->
+      <!-- <p id="test_reload"></p> -->
+
+    </div>
+
+    <script>
+
+      // Complete post-click actions
+      function button_click(clicked_id) {
+
+        // Disable all buttons
+        button_list = document.getElementsByClassName("button_small");
+        for (let i = 0; i < button_list.length; i++) {
+          button_list[i].disabled = true;
+        }
+
+        // Change clicked button color
+        document.getElementById(clicked_id).style.color = "#FF005F";
+
+        // Prefix clicked button id with "clicked_", for future use
+        document.getElementById(clicked_id).id = "clicked_" + clicked_id;
+
+        // Clear regex input
+        document.getElementById("regex").value = "";
+
+        // Broadcast Clunky button message
+        document.getElementById("clunky_index").src = "/static/clunky_button.png";
+
+        // Reveal master regex character if clicked
+        let master = {{ master|safe }}
+        let element1;
+        let prefix1 = "master"
+        for (let i = 0; i < 5; i++) {
+          for (let j = 0; element1 = document.getElementById(prefix1 + i + j); j++) {
+            if (clicked_id == master[i][j] ) {
+              element1.innerHTML = clicked_id;
+              element1.className = "button_reveal";
+            }
+          }
+        }
+      }
+
+      // Route reload to select new match and nomatch lists
+      let reload = document.getElementsByClassName("button_small");
+      for (let i = 0; i < reload.length; i++) {
+        reload[i].addEventListener('click', async function() {
+          let response = await fetch('/reload?x=' + input.value);
+          let reload = await response.json();
+
+          // Update match list and set color to white
+          let element2;
+          let prefix2 = "match"
+          for (let i = 0; element2 = document.getElementById(prefix2 + i); i++) {
+            element2.innerHTML = reload[0][i];
+            element2.style.color = "#DDDDDD";
+          }
+
+          // Update nomatch list and set color to white
+          let element3;
+          let prefix3 = "nomatch"
+          for (let i = 0; element3 = document.getElementById(prefix3 + i); i++) {
+            element3.innerHTML = reload[1][i];
+            element3.style.color = "#DDDDDD";
+          }
+
+          // !!! Testing, can be removed in final version
+          // document.getElementById("test_reload").innerHTML = reload;
+        })
+      }
+
+    </script>
+
+  </div>
+
+  <!-- Decrypt section -->
+  <div class="content" style="text-align:center;">
+    <h3 class="title" style="margin-bottom:15px;">DECRYPT.solution</h3>
+
+     <!-- Cyphertext -->
+
+        <!-- Add cyphertext -->
+          {% for i in range(5) %}
+            <p class="numbers2"> {{ i + 1 }}</p>&nbsp
+            <p class="list2"> {{ cypher[i] }} </p><br>
+          {% endfor %}
+        <br>
+
+    <div style="display:flex;">
+
+      <!-- Attempts -->
+      <p id="attempts">ATTEMPTS LEFT = 3</p>
+
+      <!-- User solution input -->
+      <input type="text" placeholder="type solution" id="user_solution">
+
+      <!-- Submit button -->
+      <input type="button" value="SUBMIT SOLUTION"id="button_submit">
+
+    </div>
+
+    <!-- !!! Testing, can be removed in final version -->
+    <!-- <p id="test_solution"></p> -->
+
+    <script>
+
+      // Check user input against solution
+      attempts = 3;
+      let solution = "{{ solution|safe }}";
+      document.getElementById('button_submit').addEventListener('click',function() {
+          let user = document.getElementById('user_solution')
+          if (user.value == solution ) {
+            // Broadcast Clunky correct solution message
+            document.getElementById("clunky_index").src = "/static/clunky_correct.png";
+          } else {
+            // Broadcast Clunky incorrect solution message
+            attempts--;
+            document.getElementById("attempts").innerHTML = "ATTEMPTS LEFT = " + attempts;
+            // Broadcast Clunky incorrect solution 1 message
+            if (attempts == 2) {
+              document.getElementById("clunky_index").src = "/static/clunky_incorrect1.png";
+            } else if (attempts == 1) {
+              document.getElementById("clunky_index").src = "/static/clunky_incorrect2.png";
+            } else if (attempts == 0) {
+              document.getElementById("clunky_index").src = "/static/clunky_incorrect3.png";
+              document.getElementById("button_submit").disabled = true
+            }
+          }
+      });
+
+      // !!! Testing, can be removed in final version
+      // document.getElementById("test_solution").innerHTML = attempts;
+
+    </script>
+
+  </div>
+
+{% endblock %}

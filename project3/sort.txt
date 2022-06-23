@@ -1,0 +1,64 @@
+* Comparing different sorting methods
+
+* Method characteristics
+	* selection sort
+		* O(n^2), O(n^2/2): middle
+		* Ω(n^2), Ω(n^2/2): middle
+		* Θ(n^2), Θ(n^2/2)
+	* bubble sort
+		* O(n^2), O(n^2 - 2n + 1): slowest
+		* Ω(n), Ω(n - 1): fastest
+		* should be fastest when sorted, should be slowest when unsorted
+	* merge sort
+		* O(n log n): fastest
+		* Ω(n log n): middle
+		* Θ(n log n)
+
+sort1: BUBBLE SORT
+	random 5,000: 0.09
+	reversed 5,000: 0.09
+	sorted 5,000: 0.03
+
+	random 50,000: 9.4
+	reversed 50,000: 7.8
+	sorted 50,000: 2.1
+
+	Slowest for random and reversed, 2nd fastest for sorted.
+	Random slowest, reversed next, sorted fastest.
+
+	Bubble sort
+		sorted much faster than random/reversed, Ω(n) vs O(n^2)
+
+sort2: MERGE SORT
+	random 5,000: 0.03
+	reversed 5,000: 0.04
+	sorted 5,000: 0.03
+
+	random 50,000: 1.2
+	reversed 50,000: 1.1
+	sorted 50,000: 1.2
+
+	Fastest for all.
+	Types similar.
+
+	Merge sort
+		sorting types similar because Θ
+		faster than sort 3
+
+
+sort3: SELECTION SORT
+	random 5,000: 0.05
+	reversed 5,000: 0.03
+	sorted 5,000: 0.08
+
+	random 50,000: 5.4
+	reversed 50,000: 3.8
+	sorted 50,000: 4.9
+
+	Second fastest for random and reversed, slowest for sorted.
+	Random and sorted slowest, reversed fastest.
+
+	Selection
+		sorting types similar because Θ
+		slower than sort 2
+

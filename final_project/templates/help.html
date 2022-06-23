@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Help
+{% endblock %}
+
+{% block main %}
+
+  <!-- Game Instructions -->
+  <div class="content">
+
+    <h3>WHAT IS RECRYPTEX?</h3>
+    <p>Recryptex is a multi-stage game that uses REgular EXpressions
+       to deCRYPT cyphertext. This game was developed as a CS50
+       final project.</p>
+    <h3>HOW TO PLAY RECRYPTEX?</h3>
+    <p>The overall goal of Recryptex is to decrypt cyphertext. However,
+       doing so is easier said than done. You will get lots of regular expression
+       practice as you progress through the match, reveal, and decrypt
+       stages:</p>
+
+    <!-- Game stages -->
+    <ol>
+      <li>Match: During the match stage, you will be presented with two columns
+        of text labelled "match" and "^match". Each column has multiple strings.
+        You are tasked with creating a regular expression that matches all of
+        the strings in the match column but also doesn't match any of the
+        strings in the ^match column. This regular expression is referred to as
+        the "slave" regular expression. Initially, all strings in both columns
+        will be white. As you type your regular expression into the "type slave
+        regex" text box, each string will turn green if (1) the string is in the
+        matched column and has been matched, or (2) the string is in the
+        ^matched column and has not been matched. If a string hasn't been
+        matched properly then it will turn pink. If you successfully match all
+        strings in both columns (all strings are green) then you will advance to
+        the reveal stage.</li>
+      <li>Reveal: The goal of the reveal stage is to reveal the "master" regular
+        expressions (there are five in total). At the start of the game, the
+        master regular expressions are completely hidden. Every time you
+        successfully complete the match stage you will be required to select one
+        character (letter, number, symbol, or space) and if that character is
+        contained within the master regular expressions then it will be
+        revealed. This stage is similar to the popular American television game
+        show, Wheel of Fortune, however, rather than trying to guess a phrase,
+        you are trying to reveal the master regular expressions. Characters
+        available for guessing are listed in green but will turn pink once they
+        have been selected. Revelaing most, if not all, of the master regular
+        expressions will make the decrypt stage much easier.</li>
+      <li>Decrypt: The decrypt stage includes a random block of text - the
+        cyphertext. There are five rows of cyphertext numbered one to five. To
+        decrypt the cyphertext you will need to apply each master regular
+        expression (also numbered one to five) with it's corresponding row of
+        cyphtertext (e.g. one with one, three with three, five with five). The
+        solution is determined by concatenating the cyphertext characters
+        matched by each of the master regular expressions. So for example, if
+        the first master regular expression matches "Reg", the second matches
+        "ex", the third matches " is", the fourth matches " ha", and the fifth
+        matches "rd!", then the solution would be "Regex is hard!". Note that,
+        capitilization and white space are important so pay attention to these
+        details. When you know the overall solution, type it into the "type
+        solution" text box and click the "submit solution" button. You are only
+        provided three attempts so don't submit until you are confident you know
+        the solution!</li>
+    </ol>
+
+    <!-- Clunky -->
+    <h3>CLUNKY IS HERE TO HELP!</h3>
+
+    <!-- Create row for multi-column layout -->
+    <div class="row">
+
+      <!-- Text -->
+      <div class="column">
+        <p>The rules of Recryptex can be a bit "cryptic" when you are first
+          starting out. That's why our robot assistant, "Clunky", will be with
+          you every step of the way. Clunky likes to chime in from time to time
+          with helpful tips to keep you on track. Unfortunately, Clunky is in
+          need of maintenance and repairs. If you listen closely you can here
+          his parts squeaking and clunking. Fingers crossed he'll last long
+          enough for you to become a regular expression master!</p>
+      </div>
+
+      <!-- Image -->
+      <div class="column">
+        <img src="/static/clunky_help.png" alt="clunky the robot" id="clunky_help">
+      </div>
+    </div>
+
+   <h3>REGEX IMPLEMENTATION</h3>
+    <p>Although regular expression syntax is generally compatible across
+      languages (having POSIX standards), different regular expression engines
+      process regular expressions in slightly different ways. Recryptex was
+      implemented using the Python regular expression engine. For comprehensive
+      documentation about the differences between engines please visit:
+      <span><a href="https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816"
+      target="_blank";>Regular Expression Engine Comparison Chart</a></span></p>
+
+  </div>
+
+{% endblock %}
