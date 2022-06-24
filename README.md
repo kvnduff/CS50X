@@ -72,7 +72,7 @@ associated links.
   * Birthdays: create a web application to keep track of friends' birthdays using Flask ([I](https://cs50.harvard.edu/x/2022/labs/9/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9/birthdays))
   * Finance: implement a website via which users can "buy" and "sell" stocks using Flask ([I](https://cs50.harvard.edu/x/2022/psets/9/finance/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9/finance))
 - Week 10: Final Project
-  * Final Project: an online game that uses regular expressions to decrypt cyphertext ([I](https://cs50.harvard.edu/x/2022/project/), [R](https://github.com/kvnduff/CS50X/tree/master/final_project))
+  * Final Project: an online game that uses regular expressions to decrypt cyphertext ([I](https://cs50.harvard.edu/x/2022/project/), [R](https://github.com/kvnduff/CS50X/tree/master/final_project))<br>
     <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" 
     target="_blank"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" 
     alt="Recryptex" width="240" height="180" target="_blank"/></a>
