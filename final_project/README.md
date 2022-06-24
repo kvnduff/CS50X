@@ -1,23 +1,12 @@
-# RECRYPTEX README
+# RECRYPTEX
+
+Recryptex is an online game that uses regex to decrypt cyphertext. A video 
+demonstration of the game can be found at:
+  [Recryptex](https://youtu.be/M8JmcAFzFuo)
 
 
-## Video Demo
-[YouTube - Recryptex](https://youtu.be/M8JmcAFzFuo)
+## Program Features
 
-## Summary
-Recryptex is an online game that uses regex to decrypt cyphertext. Following are
-sections about Recryptex development (how the game was developed) and gameplay
-(details about how to play the game). To understand the terminology used in the
-development section it is recommended to first read the gameplay section.
-
-
-## Gameplay
-
-### What is recryptex?
-Recryptex is a multi-stage game that uses REgular EXpressions to deCRYPT
-cyphertext. This game was developed as a CS50 final project.
-
-### How to play recryptex?
 The overall goal of Recryptex is to decrypt cyphertext. However, doing so is
 easier said than done. You will get lots of regular expression practice as you
 progress through the match, reveal, and decrypt stages:
@@ -63,7 +52,6 @@ progress through the match, reveal, and decrypt stages:
    only provided three attempts so don't submit until you are confident you know
    the solution!
 
-### Help
 The rules of Recryptex can be a bit "cryptic" when you are first starting out.
 That's why our robot assistant, "Clunky", will be with you every step of the
 way. Clunky likes to chime in from time to time with helpful tips to keep you on
@@ -71,25 +59,20 @@ track. Unfortunately, Clunky is in need of maintenance and repairs. If you
 listen closely you can here his parts squeaking and clunking. Fingers crossed
 he'll last long enough for you to become a regular expression master!
 
-### Regular Expression Engines
 Although regular expression syntax is generally compatible across languages
 (having POSIX standards), different regular expression engines process regular
 expressions in slightly different ways. Recryptex was implemented using the
 Python regular expression engine. For comprehensive documentation about the
 differences between engines please visit:
-[Regular Expression Engine Comparison Chart](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816)
+  [Regular Expression Engine Comparison Chart](https://gist.github.com/CMCDragonkai/6c933f4a7d713ef712145c5eb94a1816)
 
 
-## Development
+## Technical Details
 
-### Resources
 Recryptex is a web application developed using HTML, CSS, JavaScript, Python,
 SQL and Flask/Jinja, within the CS50 Codespace IDE. Game images were made with
-GIMP.
-
-### Implementation
-The following includes a general description of how the game was developed,
-categorized according to the web application files.
+GIMP. The following includes a general description of how the game was 
+developed, categorized according to the web application files.
 
 ### `app.py`
 This is the web application Python file. Standard libraries are imported for
