@@ -68,7 +68,7 @@ associated links.
   * Trivia: write a webpage that lets users answer trivia questions using HTML, CSS, and JavaScript ([I](https://cs50.harvard.edu/x/2022/labs/8/), [R](https://github.com/kvnduff/CS50X/tree/master/pset8/trivia))
   * Homepage: build a simple homepage using HTML, CSS, and JavaScript ([I](https://cs50.harvard.edu/x/2022/psets/8/homepage/), [R](https://github.com/kvnduff/CS50X/tree/master/pset8/homepage))
 - Week 9: Flask
-  * Birthdays: create a web application to keep track of friends' birthdays using Flask ([I](https://cs50.harvard.edu/x/2022/labs/9/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9/birthdays))))
+  * Birthdays: create a web application to keep track of friends' birthdays using Flask ([I](https://cs50.harvard.edu/x/2022/labs/9/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9/birthdays))
   * Finance: implement a website via which users can "buy" and "sell" stocks using Flask ([I](https://cs50.harvard.edu/x/2022/psets/9/finance/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9/finance))
 - Week 10: Final Project
   * Final Project: an online game that uses regular expressions to decrypt cyphertext ([I](https://cs50.harvard.edu/x/2022/project/), [R](https://github.com/kvnduff/CS50X/tree/master/final_project))
