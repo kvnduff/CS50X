@@ -30,6 +30,16 @@ Students who take CS50X learn:
 CS50X includes ten lectures, each of which includes a problem set. The problem 
 sets require students to apply the topics covered during the lectures in one or 
 more projects. The course finishes with one final project.
+
+<details>
+<summary>Dropdown Heading</summary>
+<br>
+Choice 1
+<br> Choice 2
+<br> Choice 2
+<br>
+</details>
+
 - Week 0: Scratch
   * Scratch: a project using Scratch ([instructions](https://cs50.harvard.edu/x/2022/psets/0/scratch/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset0))
 - Week 1: C
