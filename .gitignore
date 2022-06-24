@@ -1,6 +1,4 @@
 final_project/video/*
 final_project/sql_import.txt
-final_project/instructions_*.mhtml
-pset*/instructions_*.mhtml
 pset9/finance/iex_cloud.txt
 .gitignore
