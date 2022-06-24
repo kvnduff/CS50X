@@ -55,6 +55,7 @@ associated links.
   * Inheritance: simulate the inheritance of blood types for each member of a family using C ([I](https://cs50.harvard.edu/x/2022/labs/5/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5/inheritance))
   * Speller: spell-check a file using a hash table using C ([I](https://cs50.harvard.edu/x/2022/psets/5/speller/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5/speller))
 - Week 6: Python
+  * World-Cup: run simulations of the FIFA World Cup ([I](https://cs50.harvard.edu/x/2022/labs/6/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6/world-cup))
   * Hello: print a simple greeting using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/hello/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6/hello))
   * Mario: print a double half-pyramid using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/mario/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6/mario))
   * Credit: determine whether a credit card number is valid according to Luhn's algorithm using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/credit/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6/credit))
