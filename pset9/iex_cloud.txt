@@ -1,4 +1,0 @@
-IEX cloud
-username: Kevin Duff, kvnduff@gmail.com
-password: choclo2021!
-API token: pk_8a8b0e78fbc4488681986d8467228bed

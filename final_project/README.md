@@ -3,6 +3,7 @@
 
 ## Video Demo
 [YouTube - Recryptex](https://youtu.be/M8JmcAFzFuo)
+
 ## Summary
 Recryptex is an online game that uses regex to decrypt cyphertext. Following are
 sections about Recryptex development (how the game was developed) and gameplay

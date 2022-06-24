@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: sorted (omega = n - 1) much faster than unsorted (O = n^2). 
+
+sort2 uses: merge sort
+
+How do you know?: sorted versus unsorted similar time (theta = n log n), faster than sort3 (selection sort).
+
+sort3 uses: selection sort
+
+How do you know?: sorted versus unsorted similar times (theta = n^2), slower than sort2 (merge sort).
