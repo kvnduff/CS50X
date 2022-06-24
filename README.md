@@ -31,50 +31,44 @@ CS50X includes ten lectures, each of which includes a problem set. The problem
 sets require students to apply the topics covered during the lectures in one or 
 more projects. The course finishes with one final project.
 
-<details>
-<summary>Dropdown Heading</summary>
-<br>
-Choice 1
-<br> Choice 2
-<br> Choice 2
-<br>
-</details>
+To view any of the project's instructions click "I" or to view the project's 
+repository click on "R".
 
 - Week 0: Scratch
-  * Scratch: a project using Scratch ([instructions](https://cs50.harvard.edu/x/2022/psets/0/scratch/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset0))
+  * Scratch: a project using Scratch ([I](https://cs50.harvard.edu/x/2022/psets/0/scratch/), [R](https://github.com/kvnduff/CS50X/tree/master/pset0))
 - Week 1: C
-  * Hello: print a simple greeting using C ([instructions](https://cs50.harvard.edu/x/2022/psets/1/hello/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset1))
-  * Mario: print a double half pyramid using C ([instructions](https://cs50.harvard.edu/x/2022/psets/1/mario/more/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset1))
-  * Credit: determine whether a credit card number is valid according to Luhn's algorithm using C ([instructions](https://cs50.harvard.edu/x/2022/psets/1/credit/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset1))
+  * Hello: print a simple greeting using C ([I](https://cs50.harvard.edu/x/2022/psets/1/hello/), [R](https://github.com/kvnduff/CS50X/tree/master/pset1))
+  * Mario: print a double half pyramid using C ([I](https://cs50.harvard.edu/x/2022/psets/1/mario/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset1))
+  * Credit: determine whether a credit card number is valid according to Luhn's algorithm using C ([I](https://cs50.harvard.edu/x/2022/psets/1/credit/), [R](https://github.com/kvnduff/CS50X/tree/master/pset1))
 - Week 2: Arrays
-  * Scrabble: determine which of two Scrabble words is worth more ([instructions](https://cs50.harvard.edu/x/2022/labs/2/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset2))
-  * Readability: compute the approximate grade level needed to comprehend sample text using C ([instructions](https://cs50.harvard.edu/x/2022/psets/2/readability/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset2))
-  * Substitution: implement a substitution cypher ([instructions](https://cs50.harvard.edu/x/2022/psets/2/substitution/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset2))
+  * Scrabble: determine which of two Scrabble words is worth more ([I](https://cs50.harvard.edu/x/2022/labs/2/), [R](https://github.com/kvnduff/CS50X/tree/master/pset2))
+  * Readability: compute the approximate grade level needed to comprehend sample text using C ([I](https://cs50.harvard.edu/x/2022/psets/2/readability/), [R](https://github.com/kvnduff/CS50X/tree/master/pset2))
+  * Substitution: implement a substitution cypher ([I](https://cs50.harvard.edu/x/2022/psets/2/substitution/), [R](https://github.com/kvnduff/CS50X/tree/master/pset2))
 - Week 3: Algorithms
-  * Sort: analyze three sorting programs to determine which algorithms they use ([instructions](https://cs50.harvard.edu/x/2022/labs/3/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset3))
-  * Plurality: simulate a plurality election ([instructions](https://cs50.harvard.edu/x/2022/psets/3/plurality/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset3))
-  * Tideman: simulate a Tideman election ([instructions](https://cs50.harvard.edu/x/2022/psets/3/tideman/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset3))
+  * Sort: analyze three sorting programs to determine which algorithms they use ([I](https://cs50.harvard.edu/x/2022/labs/3/), [R](https://github.com/kvnduff/CS50X/tree/master/pset3))
+  * Plurality: simulate a plurality election ([I](https://cs50.harvard.edu/x/2022/psets/3/plurality/), [R](https://github.com/kvnduff/CS50X/tree/master/pset3))
+  * Tideman: simulate a Tideman election ([I](https://cs50.harvard.edu/x/2022/psets/3/tideman/), [R](https://github.com/kvnduff/CS50X/tree/master/pset3))
 - Week 4: Memory
-  * Volume: modify the volume of audio files ([instructions](https://cs50.harvard.edu/x/2022/labs/4/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset4))
-  * Filter: apply filters to BMP files ([instructions](https://cs50.harvard.edu/x/2022/psets/4/filter/more/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset4))
-  * Recover: recover JPEGs from a forensic image ([instructions](https://cs50.harvard.edu/x/2022/psets/4/recover/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset4))
+  * Volume: modify the volume of audio files ([I](https://cs50.harvard.edu/x/2022/labs/4/), [R](https://github.com/kvnduff/CS50X/tree/master/pset4))
+  * Filter: apply filters to BMP files ([I](https://cs50.harvard.edu/x/2022/psets/4/filter/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset4))
+  * Recover: recover JPEGs from a forensic image ([I](https://cs50.harvard.edu/x/2022/psets/4/recover/), [R](https://github.com/kvnduff/CS50X/tree/master/pset4))
 - Week 5: Data Structures
-  * Inheritance: simulate the inheritance of blood types for each member of a family ([instructions](https://cs50.harvard.edu/x/2022/labs/5/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset5))
-  * Speller: spell-check a file using a hash table ([instructions](https://cs50.harvard.edu/x/2022/psets/5/speller/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset5))
+  * Inheritance: simulate the inheritance of blood types for each member of a family ([I](https://cs50.harvard.edu/x/2022/labs/5/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5)) * Speller: spell-check a file using a hash table ([I](https://cs50.harvard.edu/x/2022/psets/5/speller/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5))
 - Week 6: Python
-  * Hello: print a simple greeting using Python ([instructions](https://cs50.harvard.edu/x/2022/psets/6/hello/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-  * Mario: print a double half-pyramid using Python ([instructions](https://cs50.harvard.edu/x/2022/psets/6/mario/more/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-  * Credit: determine whether a credit card number is valid according to Luhn's algorithm using Python ([instructions](https://cs50.harvard.edu/x/2022/psets/6/credit/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-  * Readability: compute the approximate grade level needed to comprehend sample text using Python ([instructions](https://cs50.harvard.edu/x/2022/psets/6/readability/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-  * DNA: identify a person based on their DNA ([instructions](https://cs50.harvard.edu/x/2022/psets/6/dna/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset6))
-- Week 7: SQL
-  * Songs: write SQL queries to answer questions about a database of songs ([instructions](https://cs50.harvard.edu/x/2022/labs/7/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset7))
-  * Movies: write SQL queries to answer questions about a database of movies ([instructions](https://cs50.harvard.edu/x/2022/psets/7/movies/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset7))
-  * Fiftyville: write SQL queries to solve a mystery ([instructions](https://cs50.harvard.edu/x/2022/psets/7/fiftyville/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset7))
+  * Hello: print a simple greeting using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/hello/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
+  * Mario: print a double half-pyramid using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/mario/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
+  * Credit: determine whether a credit card number is valid according to Luhn's algorithm using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/credit/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
+  * Readability: compute the approximate grade level needed to comprehend sample text using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/readability/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
+  * DNA: identify a person based on their DNA ([I](https://cs50.harvard.edu/x/2022/psets/6/dna/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6)) - Week 7: SQL
+  * Songs: write SQL queries to answer questions about a database of songs ([I](https://cs50.harvard.edu/x/2022/labs/7/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7)) * Movies: write SQL queries to answer questions about a database of movies ([I](https://cs50.harvard.edu/x/2022/psets/7/movies/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
+  * Fiftyville: write SQL queries to solve a mystery ([I](https://cs50.harvard.edu/x/2022/psets/7/fiftyville/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
 - Week 8: HTML, CSS, JavaScript
-  * Trivia: write a webpage that lets users answer trivia questions ([instructions](https://cs50.harvard.edu/x/2022/labs/8/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset8))
-  * Homepage: build a simple homepage using HTML, CSS, and JavaScript ([instructions](https://cs50.harvard.edu/x/2022/psets/8/homepage/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset8))
+  * Trivia: write a webpage that lets users answer trivia questions ([I](https://cs50.harvard.edu/x/2022/labs/8/), [R](https://github.com/kvnduff/CS50X/tree/master/pset8))
+  * Homepage: build a simple homepage using HTML, CSS, and JavaScript ([I](https://cs50.harvard.edu/x/2022/psets/8/homepage/), [R](https://github.com/kvnduff/CS50X/tree/master/pset8))
 - Week 9: Flask
-  * Finance: implement a website via which users can "buy" and "sell" stocks ([instructions](https://cs50.harvard.edu/x/2022/psets/9/finance/), [repo](https://github.com/kvnduff/CS50X/tree/master/pset9))
+  * Finance: implement a website via which users can "buy" and "sell" stocks ([I](https://cs50.harvard.edu/x/2022/psets/9/finance/), [R](https://github.com/kvnduff/CS50X/tree/master/pset9))
 - Week 10: Final Project
-  * Final Project: an online game that uses regular expressions to decrypt cyphertext ([instructions](https://cs50.harvard.edu/x/2022/project/), [repo](https://github.com/kvnduff/CS50X/tree/master/final_project)) <a href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" target="_blank"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" alt="Recryptex" width="240" height="180" target="_blank"/></a>
+  * Final Project: an online game that uses regular expressions to decrypt cyphertext ([I](https://cs50.harvard.edu/x/2022/project/), [R](https://github.com/kvnduff/CS50X/tree/master/final_project)) <a 
+    href="http://www.youtube.com/watch?feature=player_embedded&v=M8JmcAFzFuo" 
+    target="_blank"><img src="http://img.youtube.com/vi/M8JmcAFzFuo/0.jpg" 
+    alt="Recryptex" width="240" height="180" target="_blank"/></a>
