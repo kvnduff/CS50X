@@ -29,10 +29,9 @@ Students who take CS50X learn:
 ### Projects
 CS50X includes ten lectures, each of which includes a problem set. The problem 
 sets require students to apply the topics covered during the lectures in one or 
-more projects. The course finishes with one final project.
-
-To view any of the project's instructions click "I" or to view the project's 
-repository click on "R".
+more projects. The course finishes with one final project. The project's 
+instructions (I) and repository files (R) can be accessed by clicking on the 
+associated links.
 
 - Week 0: Scratch
   * Scratch: a project using Scratch ([I](https://cs50.harvard.edu/x/2022/psets/0/scratch/), [R](https://github.com/kvnduff/CS50X/tree/master/pset0))
@@ -53,14 +52,16 @@ repository click on "R".
   * Filter: apply filters to BMP files ([I](https://cs50.harvard.edu/x/2022/psets/4/filter/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset4))
   * Recover: recover JPEGs from a forensic image ([I](https://cs50.harvard.edu/x/2022/psets/4/recover/), [R](https://github.com/kvnduff/CS50X/tree/master/pset4))
 - Week 5: Data Structures
-  * Inheritance: simulate the inheritance of blood types for each member of a family ([I](https://cs50.harvard.edu/x/2022/labs/5/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5)) * Speller: spell-check a file using a hash table ([I](https://cs50.harvard.edu/x/2022/psets/5/speller/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5))
+  * Inheritance: simulate the inheritance of blood types for each member of a family ([I](https://cs50.harvard.edu/x/2022/labs/5/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5))
+  * Speller: spell-check a file using a hash table ([I](https://cs50.harvard.edu/x/2022/psets/5/speller/), [R](https://github.com/kvnduff/CS50X/tree/master/pset5))
 - Week 6: Python
   * Hello: print a simple greeting using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/hello/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * Mario: print a double half-pyramid using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/mario/more/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * Credit: determine whether a credit card number is valid according to Luhn's algorithm using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/credit/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * Readability: compute the approximate grade level needed to comprehend sample text using Python ([I](https://cs50.harvard.edu/x/2022/psets/6/readability/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6))
   * DNA: identify a person based on their DNA ([I](https://cs50.harvard.edu/x/2022/psets/6/dna/), [R](https://github.com/kvnduff/CS50X/tree/master/pset6)) - Week 7: SQL
-  * Songs: write SQL queries to answer questions about a database of songs ([I](https://cs50.harvard.edu/x/2022/labs/7/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7)) * Movies: write SQL queries to answer questions about a database of movies ([I](https://cs50.harvard.edu/x/2022/psets/7/movies/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
+  * Songs: write SQL queries to answer questions about a database of songs ([I](https://cs50.harvard.edu/x/2022/labs/7/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
+  * Movies: write SQL queries to answer questions about a database of movies ([I](https://cs50.harvard.edu/x/2022/psets/7/movies/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
   * Fiftyville: write SQL queries to solve a mystery ([I](https://cs50.harvard.edu/x/2022/psets/7/fiftyville/), [R](https://github.com/kvnduff/CS50X/tree/master/pset7))
 - Week 8: HTML, CSS, JavaScript
   * Trivia: write a webpage that lets users answer trivia questions ([I](https://cs50.harvard.edu/x/2022/labs/8/), [R](https://github.com/kvnduff/CS50X/tree/master/pset8))
